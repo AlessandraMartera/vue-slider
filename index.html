@@ -36,7 +36,7 @@
             </div>
 
             <div v-for = "( img, index ) in images" class="thumb_items">
-                <img  :src="images[index].image" alt="">
+                <img :class="activeimage === index ? 'evidence' : ' '":src="images[index].image" alt="">
             </div>
             
             
