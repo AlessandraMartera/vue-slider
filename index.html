@@ -17,14 +17,14 @@
 
         <!-- container block -->
         <div id="container">
-            <!-- <div>{{images[activeimage].image}}</div> -->
+            <div>{{images[activeimage].image}}</div>
             
             <img :src = "images[activeimage].image" alt="">
-            <div class="button before hidden">
+            <div class="button before" @click = "prew">
                 <i class="fa-solid fa-chevron-up"></i>
             </div>
 
-            <div class="button next">
+            <div class="button next" @click = "next">
                 <i class="fa-solid fa-angle-down"></i>
             </div>
             
