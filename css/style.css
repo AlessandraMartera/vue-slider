@@ -81,7 +81,8 @@ main {
 
 /* cotainer */
 #container {
-    object-fit: contain;
+    width: 1000px;
+    height: 500px;
     position: relative;
     border: 1px solid #555;
 }
