@@ -13,13 +13,20 @@
 <body>
 
     <!-- main block -->
-    <main>
+    <main id="carousel">
 
         <!-- container block -->
         <div id="container">
-            <div>{{images[activeimage].image}}</div>
-            
             <img :src = "images[activeimage].image" alt="">
+            <div class="text"> 
+                <h1>{{images[activeimage].title}}</h1>
+                <div>{{images[activeimage].text}}</div>
+            </div>
+            
+        </div>
+        
+        <div class="thumb">
+
             <div class="button before" @click = "prew">
                 <i class="fa-solid fa-chevron-up"></i>
             </div>
@@ -27,9 +34,13 @@
             <div class="button next" @click = "next">
                 <i class="fa-solid fa-angle-down"></i>
             </div>
+
+            <div v-for = "( img, index ) in images" class="thumb_items">
+                <img  :src="images[index].image" alt="">
+            </div>
+            
             
         </div>
-    
     </main>
     
     <!-- Vue script -->

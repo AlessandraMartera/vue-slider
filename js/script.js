@@ -45,4 +45,4 @@ createApp({
             }
         }
     }
-}).mount('#container');
+}).mount('#carousel');
